@@ -33,13 +33,17 @@ class ForSaleBox extends StatelessWidget {
         ],
       ),
       child: Center(
-        child: Text(
-          'For Sale',
-          style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                color: Colors.green[500],
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Gilroy',
-              ),
+        child: TextButton(
+          onPressed: () {},
+          child: Text(
+            'For Sale',
+            style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                  color: Colors.green[500],
+                  background: null,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Gilroy',
+                ),
+          ),
         ),
       ),
     );
